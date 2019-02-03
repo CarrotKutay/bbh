@@ -30,5 +30,15 @@
   <%= @address.streetNr %>
 </p>
 
+<p>
+  <strong>Account:</strong>
+  <%= @address.account %>
+</p>
+
+<p>
+  <strong>Addressable:</strong>
+  <%= @address.addressable %>
+</p>
+
 <%= link_to 'Edit', edit_address_path(@address) %> |
 <%= link_to 'Back', addresses_path %>

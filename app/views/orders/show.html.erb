@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Orderconfirmationnumber:</strong>
+  <%= @order.orderConfirmationNumber %>
+</p>
+
+<p>
+  <strong>Ordered:</strong>
+  <%= @order.ordered %>
+</p>
+
+<p>
+  <strong>Shipped:</strong>
+  <%= @order.shipped %>
+</p>
+
+<p>
+  <strong>Ordereditems:</strong>
+  <%= @order.orderedItems %>
+</p>
+
+<p>
+  <strong>Shippingaddress:</strong>
+  <%= @order.shippingAddress %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @order.status %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @order.price %>
+</p>
+
+<%= link_to 'Edit', edit_order_path(@order) %> |
+<%= link_to 'Back', orders_path %>

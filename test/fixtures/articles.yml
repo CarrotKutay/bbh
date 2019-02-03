@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  discountClass: 1
+  ingredients: one
+  productable: one
+  productable_type: Productable
+
+two:
+  discountClass: 1
+  ingredients: two
+  productable: two
+  productable_type: Productable

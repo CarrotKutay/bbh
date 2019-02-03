@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  orderConfirmationNumber: 1
+  ordered: 2019-02-03
+  shipped: 2019-02-03
+  orderedItems: MyString
+  shippingAddress: 
+  status: 1
+  price: 9.99
+
+two:
+  orderConfirmationNumber: 1
+  ordered: 2019-02-03
+  shipped: 2019-02-03
+  orderedItems: MyString
+  shippingAddress: 
+  status: 1
+  price: 9.99

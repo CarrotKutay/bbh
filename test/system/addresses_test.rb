@@ -14,6 +14,9 @@ class AddressesTest < ApplicationSystemTestCase
     visit addresses_url
     click_on "New Address"
 
+    fill_in "Account", with: @address.account_id
+    fill_in "Addressable", with: @address.addressable_id
+    fill_in "Addressable type", with: @address.addressable_type
     fill_in "City", with: @address.city
     fill_in "Country", with: @address.country
     fill_in "Name", with: @address.name
@@ -30,6 +33,9 @@ class AddressesTest < ApplicationSystemTestCase
     visit addresses_url
     click_on "Edit", match: :first
 
+    fill_in "Account", with: @address.account_id
+    fill_in "Addressable", with: @address.addressable_id
+    fill_in "Addressable type", with: @address.addressable_type
     fill_in "City", with: @address.city
     fill_in "Country", with: @address.country
     fill_in "Name", with: @address.name

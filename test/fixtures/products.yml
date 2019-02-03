@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  measurement: 1
+  price: 9.99
+  productable: one
+  productable_type: Productable
+
+two:
+  name: MyString
+  measurement: 1
+  price: 9.99
+  productable: two
+  productable_type: Productable

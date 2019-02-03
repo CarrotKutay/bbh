@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Discountclass:</strong>
+  <%= @article.discountClass %>
+</p>
+
+<p>
+  <strong>Ingredients:</strong>
+  <%= @article.ingredients %>
+</p>
+
+<p>
+  <strong>Productable:</strong>
+  <%= @article.productable %>
+</p>
+
+<%= link_to 'Edit', edit_article_path(@article) %> |
+<%= link_to 'Back', articles_path %>

@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  firstName: MyString
+  lastName: MyString
+  birthday: 2019-02-03
+  orders: one
+  accountable: one
+  accountable_type: Accountable
+
+two:
+  firstName: MyString
+  lastName: MyString
+  birthday: 2019-02-03
+  orders: two
+  accountable: two
+  accountable_type: Accountable

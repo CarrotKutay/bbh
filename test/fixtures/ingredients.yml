@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  providerID: one
+  type: 1
+  allergicSubstances: 1
+  productable: one
+  productable_type: Productable
+
+two:
+  providerID: two
+  type: 1
+  allergicSubstances: 1
+  productable: two
+  productable_type: Productable

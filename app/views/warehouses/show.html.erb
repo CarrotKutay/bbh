@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @warehouse.name %>
+</p>
+
+<p>
+  <strong>Stockedingredients:</strong>
+  <%= @warehouse.stockedIngredients %>
+</p>
+
+<p>
+  <strong>Count:</strong>
+  <%= @warehouse.count %>
+</p>
+
+<%= link_to 'Edit', edit_warehouse_path(@warehouse) %> |
+<%= link_to 'Back', warehouses_path %>

@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Customer Accounts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Birthday</th>
+      <th>Orders</th>
+      <th>Accountable</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @customer_accounts.each do |customer_account| %>
+      <tr>
+        <td><%= customer_account.firstName %></td>
+        <td><%= customer_account.lastName %></td>
+        <td><%= customer_account.birthday %></td>
+        <td><%= customer_account.orders %></td>
+        <td><%= customer_account.accountable %></td>
+        <td><%= link_to 'Show', customer_account %></td>
+        <td><%= link_to 'Edit', edit_customer_account_path(customer_account) %></td>
+        <td><%= link_to 'Destroy', customer_account, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Customer Account', new_customer_account_path %>

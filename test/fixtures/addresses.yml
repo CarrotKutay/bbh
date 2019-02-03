@@ -7,6 +7,9 @@ one:
   postalCode: MyString
   street: MyString
   streetNr: MyString
+  account: one
+  addressable: one
+  addressable_type: Addressable
 
 two:
   name: MyString
@@ -15,3 +18,6 @@ two:
   postalCode: MyString
   street: MyString
   streetNr: MyString
+  account: two
+  addressable: two
+  addressable_type: Addressable

@@ -1,0 +1,32 @@
+<%= form_with(model: provider_account, local: true) do |form| %>
+  <% if provider_account.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(provider_account.errors.count, "error") %> prohibited this provider_account from being saved:</h2>
+
+      <ul>
+      <% provider_account.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :providerID %>
+    <%= form.text_field :providerID %>
+  </div>
+
+  <div class="field">
+    <%= form.label :providerIngredients_id %>
+    <%= form.text_field :providerIngredients_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :accountable_id %>
+    <%= form.text_field :accountable_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,27 @@
+<%= form_with(model: discount_class, local: true) do |form| %>
+  <% if discount_class.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(discount_class.errors.count, "error") %> prohibited this discount_class from being saved:</h2>
+
+      <ul>
+      <% discount_class.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :class_id %>
+    <%= form.text_field :class_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_field :description %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

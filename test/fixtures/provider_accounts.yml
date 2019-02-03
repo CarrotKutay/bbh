@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  providerID: MyString
+  providerIngredients: one
+  accountable: one
+  accountable_type: Accountable
+
+two:
+  providerID: MyString
+  providerIngredients: two
+  accountable: two
+  accountable_type: Accountable

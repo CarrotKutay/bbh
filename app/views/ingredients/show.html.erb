@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Providerid:</strong>
+  <%= @ingredient.providerID %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @ingredient.type %>
+</p>
+
+<p>
+  <strong>Allergicsubstances:</strong>
+  <%= @ingredient.allergicSubstances %>
+</p>
+
+<p>
+  <strong>Productable:</strong>
+  <%= @ingredient.productable %>
+</p>
+
+<%= link_to 'Edit', edit_ingredient_path(@ingredient) %> |
+<%= link_to 'Back', ingredients_path %>

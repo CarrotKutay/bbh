@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Providerid:</strong>
+  <%= @provider_account.providerID %>
+</p>
+
+<p>
+  <strong>Provideringredients:</strong>
+  <%= @provider_account.providerIngredients %>
+</p>
+
+<p>
+  <strong>Accountable:</strong>
+  <%= @provider_account.accountable %>
+</p>
+
+<%= link_to 'Edit', edit_provider_account_path(@provider_account) %> |
+<%= link_to 'Back', provider_accounts_path %>

@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Provider Accounts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Providerid</th>
+      <th>Provideringredients</th>
+      <th>Accountable</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @provider_accounts.each do |provider_account| %>
+      <tr>
+        <td><%= provider_account.providerID %></td>
+        <td><%= provider_account.providerIngredients %></td>
+        <td><%= provider_account.accountable %></td>
+        <td><%= link_to 'Show', provider_account %></td>
+        <td><%= link_to 'Edit', edit_provider_account_path(provider_account) %></td>
+        <td><%= link_to 'Destroy', provider_account, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Provider Account', new_provider_account_path %>
