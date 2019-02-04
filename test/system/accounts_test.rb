@@ -17,6 +17,7 @@ class AccountsTest < ApplicationSystemTestCase
     fill_in "Accountable", with: @account.accountable_id
     fill_in "Accountable type", with: @account.accountable_type
     fill_in "Address", with: @account.address_id
+    fill_in "Email", with: @account.email
     fill_in "Iban", with: @account.iban
     fill_in "Password", with: @account.password
     fill_in "Username", with: @account.username
@@ -33,6 +34,7 @@ class AccountsTest < ApplicationSystemTestCase
     fill_in "Accountable", with: @account.accountable_id
     fill_in "Accountable type", with: @account.accountable_type
     fill_in "Address", with: @account.address_id
+    fill_in "Email", with: @account.email
     fill_in "Iban", with: @account.iban
     fill_in "Password", with: @account.password
     fill_in "Username", with: @account.username

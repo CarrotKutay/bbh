@@ -10,13 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_02_03_152532) do
+ActiveRecord::Schema.define(version: 2019_02_03_195537) do
 
   create_table "accounts", force: :cascade do |t|
-    t.integer "address_id"
-    t.string "iban"
     t.string "username"
     t.string "password"
+    t.string "email"
+    t.integer "address_id"
+    t.string "iban"
     t.string "accountable_type"
     t.integer "accountable_id"
     t.datetime "created_at", null: false
